@@ -1,0 +1,10 @@
+{
+  "name": "COMP423 Course Notes",
+  "image": "mcr.microsoft.com/devcontainers/python:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt"
+}
