@@ -96,13 +96,18 @@ Once your dev container setup completes, close the current terminal tab (trash c
 
 In the root directory, make sure `go.mod` file exists. If you cannot find `go.mod` file, run 
 ```bash
-go mod init <your root directory name>
+go mod init github.com/<your_username>/<your-project-name>
 ```
 Once it is created, enter into the file and check if the followign code exists. 
 ```bash
 module go-tutorial
 go 1.23.4
 ```
+To see the Go version, run 
+```bash
+go version
+```
+It must show something similar to 1.23.4 which is a recent version of Go. 
 ## Running your first Go project
 1. Create a file with your preferred name. The file name must be ended with `.go` to specify the file type. 
 2. Type the following code snippet in your newly created file. 
@@ -120,6 +125,21 @@ func main() {
 go run <your file name ended with .go>
 ```
 4. You will see the output `Hello COMP423` in your terminal. 
+
+Alternatively, you can also use `build subcommand`. 
+```bash
+go build -o <your filename without .go>
+```
+It creates an executable binary file without running it. 
+```bash
+./<your filename without .go>
+```
+You will see the output `Hello COMP423` in your terminal. 
+
+!!! Difference between build and run
+
+    `go run` combines compilation and execution into one step whereas `go build` only complies the program into a binary file and requires an additional step to run the binary file. `go build` is similar to `gcc` in the way that it complies the source code into an executable binary format. 
+    
 5. You have successfully run your first Go Program. 
 
 ## Push Your Changes
