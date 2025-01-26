@@ -21,7 +21,7 @@ cd <the directory name you just created above
 ```bash
 git init
 ```
-3. Create a README file
+3. Create a README.md file
 ```bash
 echo "# Go programming language" > README.md
 git add README.md
@@ -108,7 +108,7 @@ To see the Go version, run
 ```bash
 go version
 ```
-It must show something similar to 1.23.4 which is a recent version of Go. 
+It must show something similar to `1.23.4` which is a recent version of Go. 
 ## Running your first Go project
 1. Create a file with your preferred name. The file name must be ended with `.go` to specify the file type. 
 2. Type the following code snippet in your newly created file. 
