@@ -32,7 +32,7 @@ git commit -m "Initial commit with README"
 
 2. Fill in the details as follows
     - **Repository Name:** `Go Programming Language Tutorial`
-    - **Description:** "A basic coding project in rust language"
+    - **Description:** "A basic coding project in Go language"
     - **Visibility:** Public
 3. Do not initialize the repository with a README, .gitignore, or license.
 4. Click **Create Repository**
