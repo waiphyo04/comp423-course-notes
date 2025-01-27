@@ -42,7 +42,7 @@ Add a GitHub repository as a remote:
 ```bash
 git remote add origin https://github.com/<your-usernmae>/<your-directory-name>
 ```
-Remember to replace "<your-usernmae>" and "<your-directory-name>" with your actual GitHub username.
+Remember to replace `<your-username>` and `<your-directory-name>` with your actual GitHub username.
 
 Check your default branch name 
 ```bash
@@ -71,11 +71,11 @@ The devcontainer.json file defines the configuration for your development enviro
 
 - **name:** A descriptive name for your dev container
 - **image:** The Docker image to use, in this case, the latest version of a Python environment. [You can find many Docker image in this Microsoft page](https://hub.docker.com/r/microsoft/vscode-devcontainers)
-- **customizations**:  
+**customizations**
   - **vscode**: These settings enhance the VS Code experience within the container.  
     - **settings**: Customize VS Code editor settings for this project.
     - **extensions**: This indicates any VS Code extension that we want to include in this container. In this case, we includes the `golang.go` extension.
-- **postCreateCommand:** A command to run after the container is created. `go mod init hello-world` 
+- **postCreateCommand:** A command to run after the container is created. `go mod init <your directory>` 
 Please include the following code in the .devcontainer.json file. 
 ```json
 {
@@ -147,7 +147,7 @@ You will see the output `Hello COMP423` in your terminal.
 Run the following command. 
 ```bash
 git add .
-git commit -m <your commit message
+git commit -m <your commit message>
 git push origin main
 ```
 If being run successfully, you can see your Go program file in your Github repository. 
